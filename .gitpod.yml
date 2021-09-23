@@ -1,4 +1,4 @@
-image: aprimault/e5-traitement-video:latest
+image: aprimault/e5-traitement-video:sample
 tasks:
   - init: export DISPLAY=:0 && /usr/bin/start-vnc-session.sh &> /tmp/display-\${DISPLAY}.log
     command: echo 'Create display'

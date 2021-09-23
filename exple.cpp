@@ -52,7 +52,7 @@
 int main(int /*argc*/, char** /*argv*/)
 {
   int res(0);
-  const char filename[] = "opencv.jpg";
+  const char filename[] = "../smarties.jpg";
 
   cv::Mat img = cv::imread(filename, cv::IMREAD_COLOR/*IMREAD_GRAYSCALE*/);
   if(img.empty())
