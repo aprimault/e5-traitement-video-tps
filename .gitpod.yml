@@ -2,3 +2,12 @@ image: aprimault/e5-traitement-video:sample
 tasks:
   - init: export DISPLAY=:0 && /usr/bin/start-vnc-session.sh &> /tmp/display-\${DISPLAY}.log
     command: echo 'Create display'
+ports:
+  - port: 6080
+    onOpen: open-preview
+  - port: 5900
+    onOpen: ignore
+vscode:
+  extensions:
+    - ms-vscode.cmake-tools
+    - twxs.cmake
