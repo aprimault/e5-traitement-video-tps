@@ -59,6 +59,8 @@ int main(int /*argc*/, char** /*argv*/)
   {
     std::cout << "Cannot load image!" << std::endl;
     res = -1;
+    std::cout << "Toto";
+    std::cout << "Toto2";
   }
   else
   {
