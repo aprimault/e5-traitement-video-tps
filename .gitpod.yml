@@ -1,4 +1,4 @@
-image: aprimault/e5-traitement-video:sample
+image: aprimault/gitpod-opencv-vnc:latest
 tasks:
   - init: export DISPLAY=:0 && /usr/bin/start-vnc-session.sh &> /tmp/display-\${DISPLAY}.log
     command: echo 'Create display'
